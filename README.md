@@ -9,6 +9,8 @@ a apresentação acadêmica e a publicação em um servidor estático.
 - Apresentação do projeto e de seus objetivos.
 - Portfólio com links para os projetos.
 - Lista pesquisável de integrantes.
+- Página dedicada aos ex-integrantes.
+- Galeria de fotos.
 - Layout responsivo para computador e celular.
 
 ## Requisitos
@@ -35,6 +37,12 @@ Edite [`src/data/portfolio.ts`](src/data/portfolio.ts):
 - `PROJECTS` guarda o título, a descrição, a categoria, a imagem e o link de
   cada projeto.
 - `MEMBER_NAMES` guarda os nomes exibidos na seção de integrantes.
+- As informações dos ex-integrantes e suas fotos são lidas de
+  `src/assets/Fotos Membros Antigos/`; o portfólio está separado em `GEX Web`
+  e `GEX App`.
+- A galeria exibe automaticamente as imagens de `src/assets/eventos/`, incluindo
+  arquivos em subpastas de eventos. Use imagens WebP para manter o carregamento
+  leve; as fotos existentes foram otimizadas e redimensionadas para a web.
 
 
 ## Gerar e conferir a versão de publicação
@@ -53,4 +61,3 @@ preview serve essa versão localmente para uma última conferência.
 | Comando de instalação | `npm install` |
 | Comando de build | `npm run build` |
 | Diretório de publicação | `dist` |
-
